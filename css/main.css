@@ -33,3 +33,54 @@
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 @import url("fonts.css");
+
+/* ===================================================================
+ *  02. base style overrides - (_document-setup)
+ *
+ * ------------------------------------------------------------------- */
+ html {
+ 	font-size: 10px;
+ }
+ @media only screen and (max-width: 1024px) {
+  	html {
+    	font-size: 9.375px;
+  	}
+}
+@media only screen and (max-width: 768px) {
+  	html {
+    	font-size: 10px;
+ 	}
+}
+@media only screen and (max-width: 400px) {
+	html {
+  		font-size: 9.375px;
+  	}
+}
+
+ html, body {
+ 	height: 100%;
+ }
+
+body {
+	background: #111111;
+	font-family: "librebaskerville-regular", serif;
+	color: #353535;
+	padding: 0;
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 3em;
+}
+
+a, a:visited {
+	color: #07617d;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+	color: #000000;
+}
+
