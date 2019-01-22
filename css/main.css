@@ -488,3 +488,139 @@ th:last-child, td:last-child {
     	opacity: 0;
   	}
 }
+
+/* ===================================================================
+ *  05. forms - (_forms.scss)
+ *
+ * ------------------------------------------------------------------- */
+fieldset {
+  	border: none;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  	display: block;
+  	height: 6rem;
+  	padding: 1.5rem 2rem;
+  	border: 0;
+  	outline: none;
+  	vertical-align: middle;
+  	color: #444444;
+  	font-family: "montserrat-regular", sans-serif;
+  	font-size: 1.4rem;
+ 	line-height: 3rem;
+  	max-width: 100%;
+ 	background: rgba(0, 0, 0, 0.1);
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.ss-custom-select {
+  	position: relative;
+  	padding: 0;
+}
+
+.ss-custom-select select {
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	-ms-appearance: none;
+  	-o-appearance: none;
+  	appearance: none;
+  	text-indent: 0.01px;
+  	text-overflow: '';
+  	margin: 0;
+  	line-height: 3rem;
+  	vertical-align: middle;
+}
+
+.ss-custom-select select option {
+  	padding-left: 2rem;
+  	padding-right: 2rem;
+}
+
+.ss-custom-select select::-ms-expand {
+  	display: none;
+}
+
+.ss-custom-select::after {
+  	content: '\f0d7';
+  	font-family: 'FontAwesome';
+  	position: absolute;
+  	top: 50%;
+  	right: 1.5rem;
+  	margin-top: -10px;
+  	bottom: auto;
+  	width: 20px;
+  	height: 20px;
+  	line-height: 20px;
+  	font-size: 18px;
+  	text-align: center;
+  	pointer-events: none;
+  	color: #252525;
+}
+
+.oldie .ss-custom-select::after {
+  	display: none;
+}
+
+textarea {
+  	min-height: 25rem;
+}
+
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  	color: #000000;
+}
+
+label, legend {
+  	font-family: "montserrat-bold", sans-serif;
+  	font-size: 1.4rem;
+  	margin-bottom: .6rem;
+  	color: #020202;
+  	display: block;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  	display: inline;
+}
+
+label > .label-text {
+  	display: inline-block;
+  	margin-left: 1rem;
+  	font-family: "montserrat-regular", sans-serif;
+  	line-height: inherit;
+}
+
+label > input[type="checkbox"], label > input[type="radio"] {
+  	margin: 0;
+  	position: relative;
+  	top: .15rem;
+}
+
+::-webkit-input-placeholder {
+  	color: #8e8e8e;
+}
+
+:-moz-placeholder {
+  	color: #8e8e8e;
+}
+
+::-moz-placeholder {
+  	color: #8e8e8e;
+}
+
+:-ms-input-placeholder {
+  	color: #8e8e8e;
+}
+
+.placeholder {
+  	color: #8e8e8e !important;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+ 	border: none;
+  	-webkit-text-fill-color: #fabc5a;
+  	transition: background-color 5000s ease-in-out 0s;
+}
+
