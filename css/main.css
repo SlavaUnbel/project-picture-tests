@@ -5,37 +5,27 @@
  *  ------------------------------------------------------------------
  *
  *  TOC:
- *  01. webfonts and iconfonts
- *  02. base style overrides
- *  03. typography & general theme styles
- *  04. preloader
- *  05. forms
- *  06. buttons
- *  07. other components
- *  08. common and reusable styles 
- *  09. header styles
- *  10. home
- *  11. about
- *  12. services
- *  13. portfolio
- *  14. testimonials
- *  15. clients
- *  16. contact
- *  17. footer
+ *  01. base style overrides
+ *  02. typography & general theme styles
+ *  03. preloader
+ *  04. forms
+ *  05. buttons
+ *  06. other components
+ *  07. common and reusable styles 
+ *  08. header styles
+ *  09. home
+ *  10. about
+ *  11. services
+ *  12. portfolio
+ *  13. testimonials
+ *  14. clients
+ *  15. contact
+ *  16. footer
  *
  * =================================================================== */
 
-
 /* ===================================================================
- *  01. webfonts and iconfonts - (_document-setup)
- *
- * ------------------------------------------------------------------- */
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
-@import url("fonts.css");
-
-/* ===================================================================
- *  02. base style overrides - (_document-setup)
+ *  01. base style overrides - (_document-setup)
  *
  * ------------------------------------------------------------------- */
  html {
@@ -85,7 +75,7 @@ a:hover, a:focus {
 }
 
 /* ===================================================================
- *  03. typography & general theme styles - (_document-setup.scss) 
+ *  02. typography & general theme styles - (_document-setup.scss) 
  *
  * ------------------------------------------------------------------- */
  h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
@@ -434,7 +424,7 @@ th:last-child, td:last-child {
 }
 
 /* ===================================================================
- *  04. Preloader
+ *  03. Preloader
  *
  * ------------------------------------------------------------------- */
  #preloader {
@@ -490,7 +480,7 @@ th:last-child, td:last-child {
 }
 
 /* ===================================================================
- *  05. forms - (_forms.scss)
+ *  04. forms - (_forms.scss)
  *
  * ------------------------------------------------------------------- */
 fieldset {
@@ -650,7 +640,7 @@ select:-webkit-autofill:focus {
 }
 
 /* ===================================================================
- *  06. buttons - (_button-essentials.scss)
+ *  05. buttons - (_button-essentials.scss)
  *
  * ------------------------------------------------------------------- */
 .button,
@@ -764,7 +754,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /* ===================================================================
- *  07. other components - (_others.scss)
+ *  06. other components - (_others.scss)
  *
  * ------------------------------------------------------------------- */
 .alert-box {
@@ -1047,7 +1037,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /* ===================================================================
- *  08. common and reusable styles 
+ *  07. common and reusable styles 
  *
  * ------------------------------------------------------------------- */
 .section-intro {
@@ -1147,7 +1137,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /* ===================================================================
- *  09. header styles - (_layout.scss)
+ *  08. header styles - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 header {
@@ -1435,7 +1425,7 @@ header .header-logo a {
 }
 
 /* ===================================================================
- *  10. home - (_layout.scss)
+ *  09. home - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #home {
@@ -1671,3 +1661,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
     	font-size: 3.6rem;
   	}
 }
+/* ===================================================================
+ *  10. about - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
