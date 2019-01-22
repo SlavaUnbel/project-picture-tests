@@ -1483,9 +1483,10 @@ header .header-logo a {
   	padding-bottom: 15rem;
 }
 
-.home-content-tablecell h3 {
+.home-content-tablecell h2 {
   	font-family: "montserrat-bold", sans-serif;
   	font-size: 2.2rem;
+  	letter-spacing: .3em;
   	color: white;
   	text-transform: uppercase;
   	margin: 0 0 .9rem 0;
