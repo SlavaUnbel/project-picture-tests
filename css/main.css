@@ -421,11 +421,6 @@ th:last-child, td:last-child {
   	height: 6px;
 }
 
-.parallax-section {
-  	background-attachment: fixed !important;
- 	background-size: cover !important;
-}
-
 /* ===================================================================
  *  03. Preloader
  *
@@ -2150,7 +2145,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	height: 100%;
 	border-radius: 50%;
 	position: relative;
-	cursor: default;
+	cursor: pointer;
 	box-shadow: 
 		inset 0 0 0 16px rgba(255,255,255,0.6),
 		0 1px 2px rgba(0,0,0,0.1);
@@ -2162,19 +2157,19 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 }
 
 .team-img-1 { 
-	background-image: url(images/team-member1.png);
+	background-image: url(../images/team-member1.png);
 }
 
 .team-img-2 { 
-	background-image: url(images/team-member2.png);
+	background-image: url(../images/team-member2.png);
 }
 
 .team-img-3 { 
-	background-image: url(images/team-member3.png);
+	background-image: url(../images/team-member3.png);
 }
 
 .team-img-4 { 
-	background-image: url(images/team-member4.png);
+	background-image: url(../images/team-member4.png);
 }
 
 .team-info {
@@ -2255,7 +2250,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	font-size: 22px;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-family: "Raleway",sans-serif;
+	font-family: "Raleway", sans-serif;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -2267,7 +2262,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	color: #777777;
 	font-size: 17px;
 	font-style: italic;
-	font-family: "Raleway",sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 /* ===================================================================
