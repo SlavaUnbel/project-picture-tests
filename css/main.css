@@ -16,11 +16,10 @@
  *  09. home
  *  10. about
  *  11. services
- *  12. portfolio
- *  13. testimonials
- *  14. clients
- *  15. contact
- *  16. footer
+ *  12. testimonials
+ *  13. clients
+ *  14. contact
+ *  15. footer
  *
  * =================================================================== */
 
@@ -1821,5 +1820,282 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
   	}
   	#about .lead {
     	font-size: 2.3rem;
+  	}
+}
+
+/* ===================================================================
+ *  13. portfolio - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+#portfolio {
+  	background: #FFFFFF;
+  	min-height: 800px;
+  	position: relative;
+  	padding: 0;
+}
+
+#portfolio .intro-wrap {
+  	padding: 15rem 0 21rem;
+  	background: #111111;
+}
+
+#portfolio .section-intro h3 {
+  	color: rgba(242, 242, 242, 0.5);
+}
+
+#portfolio .section-intro h1 {
+  	color: #FFFFFF;
+}
+
+#portfolio .section-intro .lead {
+  	color: rgba(242, 242, 242, 0.4);
+}
+
+#portfolio .portfolio-content {
+  	margin-top: -22.2rem;
+}
+
+#portfolio .bricks-wrapper:before, #portfolio .bricks-wrapper:after {
+  	content: "";
+  	display: table;
+}
+
+#portfolio .bricks-wrapper:after {
+  	clear: both;
+}
+
+#portfolio .bricks-wrapper .brick {
+  	float: left;
+  	width: 50%;
+  	padding: 0;
+  	margin: 0;
+}
+
+#portfolio .bricks-wrapper .brick:nth-child(2n+1) {
+  	clear: both;
+}
+
+.bricks-wrapper .item-wrap {
+  	position: relative;
+  	overflow: hidden;
+}
+
+.bricks-wrapper .item-wrap .overlay {
+  	cursor: zoom-in;
+}
+
+.bricks-wrapper .item-wrap .overlay img {
+  	vertical-align: bottom;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.bricks-wrapper .item-wrap .overlay::before {
+  	content: "";
+  	display: block;
+  	background: rgba(0, 0, 0, 0.8);
+  	opacity: 0;
+  	visibility: hidden;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	-moz-transition: all 0.5s ease-in-out;
+  	-o-transition: all 0.5s ease-in-out;
+  	-webkit-transition: all 0.5s ease-in-out;
+  	-ms-transition: all 0.5s ease-in-out;
+  	transition: all 0.5s ease-in-out;
+  	z-index: 1;
+}
+
+.bricks-wrapper .item-wrap .overlay::after {
+  	content: "...";
+  	font-family: georgia, serif;
+  	font-size: 3rem;
+  	z-index: 1;
+  	display: block;
+  	height: 30px;
+  	width: 30px;
+  	line-height: 30px;
+  	margin-left: -15px;
+  	margin-top: -15px;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	text-align: center;
+  	color: #FFFFFF;
+  	opacity: 0;
+  	visibility: hidden;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+  	-webkit-transform: scale(0.5);
+  	-ms-transform: scale(0.5);
+  	transform: scale(0.5);
+}
+
+.bricks-wrapper .item-wrap .item-text {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	padding: 3.6rem 0 0 3rem;
+  	margin-right: 6rem;
+  	z-index: 3;
+}
+
+.bricks-wrapper .item-wrap .item-text .folio-title {
+  	color: #FFFFFF;
+  	font-size: 2.2rem;
+  	line-height: 1.364;
+}
+
+.bricks-wrapper .item-wrap .item-text .folio-types {
+  	font-family: "montserrat-regular", sans-serif;
+  	font-size: 1.1rem;
+  	line-height: 1.5rem;
+  	text-transform: uppercase;
+  	letter-spacing: .1rem;
+  	color: rgba(255, 255, 255, 0.7);
+  	display: block;
+}
+
+.bricks-wrapper .item-wrap .details-link {
+  	display: block;
+  	background-color: transparent;
+  	border: 1px solid rgba(255, 255, 255, 0.3);
+  	height: 4.6rem;
+  	width: 4.6rem;
+  	line-height: 4.6rem;
+  	color: white;
+  	text-align: center;
+  	z-index: 2;
+  	border-radius: 3px;
+  	position: absolute;
+  	top: 3.6rem;
+  	right: 3rem;
+}
+
+.bricks-wrapper .item-wrap .details-link i {
+  	font-size: 2rem;
+  	line-height: 4.2rem;
+}
+
+.bricks-wrapper .item-wrap .details-link:hover, .bricks-wrapper .item-wrap .details-link:focus {
+  	background-color: #FFFFFF;
+  	color: #000000;
+}
+
+.bricks-wrapper .item-wrap .item-text, .bricks-wrapper .item-wrap .details-link {
+  	opacity: 0;
+  	visibility: hidden;
+  	-webkit-transform: translateY(100%);
+  	-ms-transform: translateY(100%);
+  	transform: translateY(100%);
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+}
+
+.bricks-wrapper .item-wrap:hover .overlay::before {
+  	opacity: 1;
+  	visibility: visible;
+}
+
+.bricks-wrapper .item-wrap:hover .overlay::after {
+  	opacity: 1;
+  	visibility: visible;
+  	-webkit-transform: scale(1);
+  	-ms-transform: scale(1);
+  	transform: scale(1);
+}
+
+.bricks-wrapper .item-wrap:hover .overlay img {
+  	-webkit-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.bricks-wrapper .item-wrap:hover .item-text, .bricks-wrapper .item-wrap:hover .details-link {
+  	opacity: 1;
+  	visibility: visible;
+  	-webkit-transform: translateX(0);
+  	-ms-transform: translateX(0);
+  	transform: translateX(0);
+}
+
+.lg-sub-html {
+  	padding: 12px 20% 15px;
+}
+
+.lg-sub-html a, .lg-sub-html a:visited {
+  	color: #f9a828;
+}
+
+.lg-sub-html a:hover, .lg-sub-html a:focus {
+  	color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1024px) {
+  	.lg-sub-html {
+    	padding: 12px 15% 15px;
+  	}
+}
+
+@media only screen and (max-width: 768px) {
+  	.lg-sub-html {
+    	padding: 12px 40px 15px;
+  	}
+}
+
+.lg-sub-html h4 {
+  	color: #FFFFFF;
+  	font-family: "montserrat-regular", sans-serif;
+  	font-size: 1.8rem;
+  	line-height: 1.333;
+}
+
+.lg-sub-html p {
+  	font-family: "montserrat-regular", sans-serif;
+  	font-size: 1.3rem;
+  	line-height: 2.4rem;
+  	margin: .6rem 0 0;
+  	color: rgba(255, 255, 255, 0.6);
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+  	border-color: #f9a828;
+}
+
+.lg-progress-bar .lg-progress {
+  	background-color: #FFFFFF;
+}
+
+#lg-counter {
+  	font-family: "montserrat-regular", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  	#portfolio .intro-wrap {
+    	padding: 12rem 0 21rem;
+  	}
+}
+
+@media only screen and (max-width: 600px) {
+  	#portfolio .bricks-wrapper .brick {
+    	float: none;
+    	width: 100%;
+  	}
+
+  	.bricks-wrapper .item-wrap .item-text .folio-title {
+    	font-size: 2rem;
+    	line-height: 1.5;
   	}
 }
