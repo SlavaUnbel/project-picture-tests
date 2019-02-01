@@ -2103,6 +2103,30 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
  *  12. team - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+.title-area {
+	display: inline;
+	float: left;
+	padding: 0 172px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.title {
+	color: #3a3a3a;
+	font-size: 40px;
+	margin-bottom: 0;
+	padding-bottom: 18px;
+}
+
+.title-line {
+	background-color: #898989;
+	display: inline-block;
+	height: 3px;
+	margin-bottom: 16px;
+	width: 60px;
+}
+
 #team {
 	display: inline;
 	padding: 70px 0px;
@@ -2178,6 +2202,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	height: inherit;
 	padding: 50px 0;
 	border-radius: 50%;
+	background: rgba(63, 195, 95, 0.8);
 	opacity: 0;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -2215,12 +2240,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	opacity: 0.8;
 	height: 27px;
 	margin: 0 5px;
+	padding-top: 4px;
 	text-align: center;
 	width: 27px; 
 }
 
 .team-info a:hover {
 	opacity: 1;
+	color: rgba(255, 255, 255, 1);
 }
 
 .team-grid li:hover .team-info {
@@ -2263,6 +2290,39 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 	font-size: 17px;
 	font-style: italic;
 	font-family: "Raleway", sans-serif;
+}
+
+.fadeInUp {
+  	-webkit-animation-name: fadeInUp;
+  	animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUp {
+  	from {
+    	opacity: 0;
+    	-webkit-transform: translate3d(0, 100%, 0);
+    	transform: translate3d(0, 100%, 0);
+  	}
+
+  	to {
+    	opacity: 1;
+    	-webkit-transform: none;
+    	transform: none;
+  	}
+}
+
+@keyframes fadeInUp {
+  	from {
+    	opacity: 0;
+    	-webkit-transform: translate3d(0, 100%, 0);
+    	transform: translate3d(0, 100%, 0);
+  	}
+
+  	to {
+    	opacity: 1;
+    	-webkit-transform: none;
+    	transform: none;
+  	}
 }
 
 /* ===================================================================
