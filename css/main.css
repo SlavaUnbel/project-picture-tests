@@ -15,11 +15,10 @@
  *  08. header styles
  *  09. home
  *  10. about
- *  11. services
- *  12. testimonials
- *  13. clients
- *  14. contact
- *  15. footer
+ *  11. portfolio
+ *  12. team
+ *  13. testimonials
+ *  14. footer
  *
  * =================================================================== */
 
@@ -1824,7 +1823,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 }
 
 /* ===================================================================
- *  13. portfolio - (_layout.scss)
+ *  11. portfolio - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #portfolio {
@@ -2101,7 +2100,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown, .oldie .scrolldown {
 }
 
 /* ===================================================================
- *  14. testimonials - (_layout.scss)
+ *  13. testimonials - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
 #testimonials {
