@@ -2835,6 +2835,12 @@ footer h4.h05 {
   	position: relative;
   	padding-bottom: 4.2rem;
  	margin-bottom: 3.6rem;
+ 	letter-spacing: 0.2rem;
+}
+
+.footer-main p {
+	line-height: 2em;
+	margin-top: -5px;
 }
 
 footer h4.h05::after {
@@ -2861,6 +2867,7 @@ footer h4.h05::after {
 .footer-main ul li {
   	list-style: none;
   	padding-left: 0;
+  	padding-bottom: 1.3em;
 }
 
 .footer-main ul a, .footer-main ul a:visited {
@@ -2876,7 +2883,7 @@ footer h4.h05::after {
 }
 
 .footer-main #mc-form {
-  	margin: 0;
+  	margin-top: 30px;
   	padding: 0;
 }
 
