@@ -140,4 +140,79 @@
 					}
 				});
 	}
+
+	/* Smooth Scrolling */
+	const ssSmothScroll = () => {
+
+		$('.smoothscroll').on('click', (e) => {
+			const 	target = this.hash,
+					$target = $(target);
+
+			e.preventDefault();
+			e.stopPropagation();
+
+			$('html, body').stop().animate( {
+				'scrollTop': $target.offset().top
+
+			}, cfg.scrollDuration, 'swing').promise().done( () => {
+
+				if ($('body').hasClass('menu-is-open')) {
+					$('#header-menu-trigger').trigger('click');
+				}
+
+			window.location.hash = target;
+			});
+		});
+	}
+
+	/* Placeholder Plugin Settings */
+	const ssPlaceholder = () => {
+		$('input, textarea, select').placeholder();  
+	}
+
+	/* Alert Boxes */
+	const ssAlertBoxes = () => {
+
+		$('.alert-box').on('click', '.close', () => {
+		  $(this).parent().fadeOut(500);
+		});
+
+	}
+
+	/* Animations */
+	const ssAnimations = () => {
+
+		if (!$('html').hasClass('no-cssanimations')) {
+			$('.animate-this').waypiont( {
+				handler: (direction) => {
+
+					const defAnimationEfx = cfg.defAnimation;
+
+					if ( direction === 'down' && !$(this.element).hasClass('animated')) {
+						$(this.element).addClass('item-animate');
+
+						setTimeout(() => {
+							$('body .animate-this.item-animate').each((ctr) => {
+								const 	el = $(this),
+										animationEfx = el.data('animate') || null;	
+
+	                  		if (!animationEfx) {
+			                 	animationEfx = defAnimationEfx;	                 	
+			               	}
+
+			              	setTimeout(() => {
+									el.addClass(animationEfx + ' animated');
+									el.removeClass('item-animate');
+								}, ctr * 30);
+			              	
+							});								
+						}, 100);
+					}
+
+	       		this.destroy(); 
+				}, 
+				offset: '95%'
+			});
+		}
+	}
 })(jQuery);
