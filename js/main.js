@@ -260,4 +260,24 @@
 
 	}
 
+	/* Initialize */
+	(function ssInit {
+
+		ssPreloader();
+		ssFitVids();
+		ssMasonryFolio();
+		ssLightGallery();
+		ssFlexSlider();
+		ssOwlCarousel();
+		ssMenuOnScrolldown();
+		ssOffCanvas();
+		ssSmoothScroll();
+		ssPlaceholder();
+		ssAlertBoxes();
+		ssAnimations();
+		ssIntroAnimation();
+		ssBackToTop();
+
+	})();
+
 })(jQuery);
