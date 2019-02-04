@@ -204,7 +204,7 @@
 									el.addClass(animationEfx + ' animated');
 									el.removeClass('item-animate');
 								}, ctr * 30);
-			              	
+
 							});								
 						}, 100);
 					}
@@ -215,4 +215,49 @@
 			});
 		}
 	}
+
+	/* Intro Animations */
+	const ssIntroAnimation = () => {
+
+		$WIN.on('load', () => {
+		
+	     	if (!$("html").hasClass('no-cssanimations')) {
+	     		setTimeout(() => {
+	    			$('.animate-intro').each((ctr) => {
+						const 	el = $(this),
+	                   			animationEfx = el.data('animate') || null;		                                      
+
+	               	if (!animationEfx) {
+	                 	animationEfx = cfg.defAnimation;	                 	
+	               	}
+
+	              	setTimeout(() => {
+							el.addClass(animationEfx + ' animated');
+						}, ctr * 300);
+
+					});				
+				}, 100);
+	     	} 
+		}); 
+	}
+
+	/* Back to Top */
+	const ssBackToTop = () => {
+
+		const 	pxShow = 500,
+				fadeInTime = 400,
+				fadeOutTime = 400, 
+				scrollSpeed = 300,
+				goTopButton = $('#go-top')
+
+		$(window).on('scroll', () => {
+			if ($(window).scrollTop() >= pxShow) {
+				goTopButton.fadeIn(fadeInTime);
+			} else {
+				goTopButton.fadeOut(fadeOutTime);
+			}
+		});
+
+	}
+
 })(jQuery);
