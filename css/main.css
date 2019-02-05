@@ -1322,11 +1322,29 @@ header .header-logo a {
 
 #menu-nav-wrap .nav-list li a {
   	color: rgba(255, 255, 255, 0.25);
-  	display: block;
+  	display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #menu-nav-wrap .nav-list li a:hover, #menu-nav-wrap .nav-list li a:focus {
   	color: white;
+}
+
+#menu-nav-wrap .nav-list li a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 1px;
+    margin-top: -5px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+#menu-nav-wrap .nav-list li a:hover:after, #menu-nav-wrap .nav-list li a:focus:after {
+    width: 100%;
 }
 
 #menu-nav-wrap .header-social-list {
@@ -2878,6 +2896,28 @@ footer h4.h05::after {
   	color: #FFFFFF;
 }
 
+.footer-main .list-links li a {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-main .list-links li a:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 1px;
+    margin-top: 5px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.footer-main .list-links li a:hover:after, .footer-main .list-links li a:focus:after {
+    width: 100%;
+}
 .footer-main .subscribe-form {
   	position: relative;
 }
